@@ -1,0 +1,188 @@
+@import "/pages/template/nodata/nodata.wxss";
+/*外部容器*/
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+} 
+
+/*整体列表*/
+.carts-list {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 80rpx;
+}
+
+/*每行单元格*/
+.carts-item {
+	display: flex;
+	flex-direction: row;
+	height:150rpx;
+	/*width属性解决标题文字太短而缩略图偏移*/
+	width:100%;
+	border-bottom: 1px solid #eee;
+	padding: 30rpx 0;
+	background : white;
+}
+
+/*item与button的容器*/
+.carts-container {
+	position: relative;
+	width: 100%;
+	height: 210rpx;
+  border-bottom: 1px solid #eee;
+}
+
+/*左部图片*/
+.carts-image {
+	width:150rpx;
+	height:150rpx;
+}
+
+
+/*右部描述*/
+.carts-text {
+	margin-left: 10rpx;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/*右上部分标题*/
+.carts-title {
+  margin-left: 30rpx;
+  color: black;
+  font-size: 30rpx;
+	line-height: 38rpx;
+}
+
+/*右下部分价格与数量*/
+.carts-subtitle {
+	font-size: 25rpx;
+	color:darkgray;
+	padding: 0 30rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+}
+
+/*价格*/
+.carts-price {
+	color: #444;
+	font-size:14px;
+	line-height: 22px;
+}
+
+
+/*商品加减按钮*/
+/*stepper容器*/
+.stepper {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+  width: 70px;
+	height: 26px;
+  display: flex;
+	flex-direction: row;
+}
+
+
+/*加号与减号*/
+.stepper text {
+  width: 19px;
+	line-height: 26px;
+	text-align: center;
+}
+
+/*数值*/
+.stepper input {
+	color: black;
+  width: 30px;
+	height: 26px;
+	text-align: center;
+	font-size: 12px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+/*普通样式*/
+.stepper .normal{
+	color: black;
+}
+
+/*禁用样式*/
+.stepper .disabled{
+	color: #ccc;
+}
+
+/*复选框样式*/
+.carts-list icon {
+	margin-top: 60rpx;
+	margin-right: 20rpx;
+  margin-left: 20rpx;
+}
+
+/*底部按钮*/
+.carts-footer {
+	width: 100%;
+	height: 80rpx;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: fixed;
+	bottom: 0;
+	border-top: 1px solid #eee;
+	background: white;
+}
+
+.select-and-amount {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+/*复选框*/
+.carts-footer icon {
+	margin-left: 20rpx;
+	display: block;
+}
+
+/*全选字样*/
+.carts-footer text {
+	font-size: 30rpx;
+	margin-left: 8rpx;
+	/*line-height: 10rpx;*/
+	display: block;
+}
+
+/*立即结算按钮*/
+.carts-footer .buy-button {
+	line-height: 80rpx;
+	text-align: center;
+	width:220rpx;
+	height: 80rpx;
+	background-color: red;
+	color: white;
+	font-size: 36rpx;
+	border-radius: 0;
+	border: 0;
+}
+
+.carts-footer .delete-button {
+	line-height: 80rpx;
+	text-align: center;
+	width:220rpx;
+	height: 80rpx;
+  padding-right: 0;
+	background-color: white;
+	color: red;
+	font-size: 30rpx;
+	border-radius: 0;
+	border: 0;
+}
+.totalMoney{
+  color:red;
+}
+
