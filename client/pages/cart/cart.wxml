@@ -1,0 +1,50 @@
+<import src="/pages/template/nodata/nodata.wxml" />
+<wxs module="newToFixed" src="../template/newToFixed.wxs"></wxs>
+
+<view wx:if="{{datanull==false}}">
+  <view class="container carts-list">
+    <view wx:for="{{cartsList}}" class="carts-container" wx:key="index">
+      <view class="carts-item" data-index="{{item.ordersId}}">
+        <!-- 复选框图标 -->
+        <icon type="{{isSelect[item.ordersId] ? 'success_circle' : 'circle'}}" size="20" catchtap="bindCheckbox" data-index="{{index}}" />
+        <view data-index="{{item.goodsId}}" bindtap="SelectItem">
+          <!-- 缩略图 -->
+          <image class="carts-image" src="{{item.goodsImageUrl}}" mode="aspectFill" />
+        </view>
+        <view class="carts-text">
+          <!-- 商品标题 -->
+          <text class="carts-title">{{item.goodsName}}</text>
+          <view class="carts-subtitle">
+            <!-- 价格 -->
+            <text class="carts-price">单价￥{{item.goodsPrice}}</text>
+            <!-- 数量加减 -->
+            <view>
+              <view class="stepper">
+                <!-- 减号 -->
+                <text class="{{minusStatuses[item.ordersId]}}" data-index="{{item.ordersId}}" bindtap="bindMinus">-</text>
+                <!-- 数值 -->
+                <input type="number" data-index="{{item.ordersId}}" bindinput="bindManual" value="{{item.goodsSelectCount}}" />
+                <!-- 加号 -->
+                <text class="normal" data-index="{{item.ordersId}}" bindtap="bindPlus">+</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="carts-footer">
+    <view class="select-and-amount">
+      <icon type="{{selectedAllStatus ? 'success_circle' : 'circle'}}" size="18" bindtap="bindSelectAll" />
+      <text>全选</text>
+      <text class="totalMoney">￥{{newToFixed.toFix(totalMoney)}}</text>
+    </view>
+    <view class="delete-button" bindtap="bindDelete">删除</view>
+    <view class="buy-button" bindtap="bindCheckout">立即结算</view>
+  </view>
+
+</view>
+
+<view wx:else="{{datanull==true}}">
+  <template is="nodata" />
+</view>
