@@ -1,0 +1,95 @@
+page {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
+
+.inputView {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bt-left {
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+  align-items: center;
+}
+
+.bt-right {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  align-items: center;
+}
+
+/*表单内容*/
+
+.login-from {
+  margin-top: 100px;
+  height: 100%;
+}
+
+/*输入框*/
+
+.nameImage, .keyImage {
+  margin-left: 22px;
+  width: 14px;
+  height: 14px;
+}
+
+.loginLab {
+  margin: 15px 15px 15px 10px;
+  color: #545454;
+  font-size: 14px;
+}
+
+.inputText {
+  text-align: left;
+  margin-right: 18px;
+  color: #ccc;
+  font-size: 14px;
+  width: 70%;
+}
+
+/*按钮*/
+
+.loginBtnView {
+  width: 100%;
+  height: auto;
+  background-color: #f2f2f2;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.bt button {
+  padding: 0 15rpx;
+  width: 90%;
+  margin-top: 15rpx;
+}
+
+.bt {
+  margin-top: 35rpx;
+}
+.radio-list {
+  background: white;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.radio {
+  width: 50%;
+  padding: 10rpx;
+  font-size: 25rpx;
+  margin-left:15rpx; 
+}
