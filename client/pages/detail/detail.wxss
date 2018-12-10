@@ -1,0 +1,160 @@
+@import "/pages/template/usersComment/usersComment.wxss";
+
+.goods-detail {
+  background-color: #f2f2f2;
+  color: black;
+  width: 100%;
+  margin-bottom: 150rpx;
+}
+
+.cont {
+  width: 100%;
+  background: #fff;
+  margin-bottom: 30rpx;
+}
+
+.title {
+  font-size: 18px;
+  color: #333;
+  line-height: 20px;
+  margin: 0;
+  max-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  padding: 5% 5% 0 5%;
+  font-weight: 700;
+}
+
+.gmxx {
+  padding: 1% 5% 5% 5%;
+  line-height: 25px;
+}
+
+.font-buju {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.xxbuju {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.font-kucun {
+  color: #ccc;
+  font-size: 18px;
+  width: 50%;
+  padding: 10px;
+}
+
+.jiage {
+  font-size: 18px;
+  color: #dd2727;
+  padding: 10px;
+  width: 50%;
+}
+
+.font_brand {
+  color: black;
+  font-size: 28rpx;
+  flex: 1;
+}
+
+.goods-detail-title {
+  background-color: #fff;
+}
+
+.goods-image {
+  width: 100%;
+  height: 200px;
+}
+
+.userlist {
+  padding-top: 20rpx;
+  background-color: #f2f2f2;
+}
+
+.line-titles {
+  font-size: 25rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+    border-bottom: 1rpx solid #ececec;
+}
+
+.line-text1 {
+  color: black;
+  font-size: 30rpx;
+  padding: 20rpx;
+  width: 50%;
+  text-align: left;
+}
+
+.line-text2 {
+  color: red;
+  font-size: 30rpx;
+  padding: 20rpx;
+  width: 50%;
+  text-align: right;
+}
+
+.decidebuy {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #292929;
+  display: flex;
+  flex-direction: row;
+}
+
+.buy-button1 {
+  padding: 30rpx;
+  flex: 1;
+  color: #fff;
+  text-align: center;
+  font-size: 35rpx;
+  border-right: 1rpx solid #ececec;
+}
+
+.buy-button2 {
+  padding: 30rpx;
+  flex: 1;
+  color: #fff;
+  text-align: center;
+  font-size: 35rpx;
+}
+
+.buy-flag {
+  background-color: #fff;
+}
+
+.text-flag {
+  display: flex;
+  background-color: #fff;
+  border-bottom: 1rpx solid #ececec;
+}
+
+.buy-introduce {
+  width: 80rpx;
+  height: 80rpx;
+  margin: 20rpx;
+}
+
+.line-flag {
+  margin-top: 40rpx;
+  font-size: 35rpx;
+  color: black;
+}
+
+.introduce-text {
+  padding: 30rpx;
+  font-size: 30rpx;
+  color: black;
+}
