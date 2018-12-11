@@ -1,0 +1,7 @@
+http://localhost:8080/storewebback/selectGoodsList.php
+http://localhost:8080//storewebback/selectCommentsById.php?userId=1&goodsId=1
+
+Select * From userComment,gooodslist Where userId=1 and goodsId=1 and gooodslist.goodsId= userComment.goodsId
+
+
+http://localhost:8080/storewebback/images/sweper1.jpg
