@@ -1,0 +1,26 @@
+<import src="/pages/template/nodata/nodata.wxml" />
+<wxs module="newToFixed" src="../template/newToFixed.wxs"></wxs>
+<import src="/pages/template/goodsList/goodsList.wxml" />
+
+<view class="header">
+  <view class="search">
+    <image class="icon" src="/images/icon_search.png" />
+    <input bindinput="inputSearch" placeholder="搜索" type="text" value="{{searchWords}}" auto-focus='true' />
+  </view>
+  <button class="yellow {{searchWords.length?'':'disabled'}}" size="mini" hover-class="hover" disabled="{{!searchWords.length}}" bindtap="doSearch">搜索
+  </button>
+</view>
+
+<view wx:if="{{datanull==false}}">
+  <view wx:for="{{goodsList}}" wx:for-item="item" wx:key="name" class="paddingspace">
+    <view data-index="{{item.goodsId}}" bindtap="SelectItem">
+      <template is="goodsList" data="{{item}}" />
+    </view>
+  </view>
+</view>
+<view wx:else="{{datanull==true}}">
+  <template is="nodata" />
+</view>
+
+<view class="pageTitle"></view>
+<button style="background-color:#008841;" bindtap="back" type="primary" class="address-add">返回主页</button>
