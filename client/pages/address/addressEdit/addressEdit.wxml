@@ -1,0 +1,37 @@
+<view class="container">
+  <form bindsubmit="formSubmit">
+    <view class="row">
+      <text>收货人</text>
+      <input type="text" value="{{addressItem.realname}}" bindinput="inputrealname" />
+    </view>
+    <view class="row">
+      <text>联系电话</text>
+      <input type="txt" value="{{addressItem.mobile}}" bindinput="inputmobile" />
+    </view>
+    <view class="row">
+      <text>省份</text>
+      <input type="txt" value="{{addressItem.province}}" bindinput="inputprovince" />
+    </view>
+    <view class="row">
+      <text>城市</text>
+      <input type="txt" value="{{addressItem.city}}" bindinput="inputcity" />
+    </view>
+    <view class="row">
+      <text>区/县</text>
+      <input type="txt" value="{{addressItem.region}}" bindinput="inputregion" />
+    </view>
+    <view class="row">
+      <text>街/镇</text>
+      <input type="txt" value="{{addressItem.town}}" bindinput="inputtown" />
+    </view>
+    <view class="row">
+      <text>详细地址</text>
+      <input type="txt" value="{{addressItem.detail}}" bindinput="inputdetail" />
+    </view>
+  </form>
+</view>
+<view class="bt">
+  <button type="primary" form-type="submit" bindtap="sureAddress">确定</button>
+  <button type="warn" form-type="submit" bindtap="deleteAddress">删除</button>
+  <button type="default" form-type="submit" bindtap="noEdit">取消</button>
+</view>
