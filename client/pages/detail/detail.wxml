@@ -44,4 +44,4 @@
 <view class="decidebuy">
   <view class="buy-button1" bindtap="addcart" style="background-color:{{bottoncolor1}}">加入购物车</view>
   <view class="buy-button2" bindtap="addbuy" style="background-color:{{bottoncolor2}}">立即购买</view>
-</view>
+</view> 
