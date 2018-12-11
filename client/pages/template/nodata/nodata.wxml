@@ -1,6 +1,0 @@
- <template name="nodata">
- <view class="container">
-      <image src="../../images/cart-null.png" class="cart-image" />
-      <view>暂无数据</view>
-</view>
-</template>
