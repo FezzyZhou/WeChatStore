@@ -1,0 +1,23 @@
+<wxs module="newToFixed" src="../../template/newToFixed.wxs"></wxs>
+<import src="/pages/template/goodsList/goodsList.wxml" />
+
+<view wx:if="{{datanull==false}}">
+  <view wx:for="{{goodsList}}" wx:for-item="item" wx:key="name" class="paddingspace">
+    <view data-index="{{item.goodsId}}" bindtap="SelectItem">
+      <template is="goodsList" data="{{item}}" />
+    </view>
+
+      <view class="goods-status">
+        <view class="goodsStatus4" data-index="{{item.goodsId}}" bindtap="deleteGoods">商品下架</view>
+      </view>
+  </view>
+</view>
+<view wx:else="{{datanull==true}}">
+  <view class="container">
+    <image src="../../../images/cart-null.png" class="cart-image" />
+    <view>暂无数据</view>
+  </view>
+</view>
+
+<view class="pageTitle"></view>
+<button style="background-color:#008841;" bindtap="back" type="primary" class="address-add">返回主页</button>

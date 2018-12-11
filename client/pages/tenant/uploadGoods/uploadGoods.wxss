@@ -1,0 +1,107 @@
+.container {
+  padding: 15rpx;
+  font-size: 30rpx;
+  line-height: 30rpx;
+  background: white;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin: 10rpx;
+  padding-left: 10rpx;
+  width: 100%;
+  border-bottom: 0.5px solid #ccc;
+}
+
+.row text {
+  flex-grow: 1;
+  text-align: left;
+  width: 20%;
+  padding: 25rpx;
+  font-size: 30rpx;
+}
+
+.row input {
+  font-size: 30rpx;
+  color: black;
+  flex-grow: 3;
+  display: inline-block;
+  padding: 15rpx;
+  width: 70%;
+}
+
+.Image-adjust{
+ display: flex;
+  justify-content: center;
+}
+.goodsImageUrl{
+  border:2px dashed  #ccc;
+  height:300px;
+  width:320px;
+  margin: 20rpx;
+ 
+}
+
+.bt button {
+  padding: 0 15rpx;
+  width: 90%;
+  margin-top: 15rpx;
+}
+
+.bt {
+  margin-top: 35rpx;
+}
+
+.line-titles {
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 30rpx;
+  background: white;
+}
+
+.line-text1 {
+  padding: 10rpx;
+  background-color: white;
+  line-height: 30rpx;
+  margin: 10rpx;
+}
+
+.line-text2 {
+  padding: 10rpx;
+}
+
+.order-inf {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.inf-row {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  width: 100%;
+  padding: 15rpx;
+  align-items: center;
+}
+
+.row-text {
+  width: 20%;
+  font-size: 30rpx;
+  text-align: left;
+  line-height: 60rpx;
+}
+
+.row-input {
+  width: 80%;
+  font-size: 30rpx;
+  line-height: 60rpx;
+}
+
+.section-text {
+  margin: 15rpx;
+}
