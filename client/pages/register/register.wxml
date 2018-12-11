@@ -32,5 +32,5 @@
       <button style="background-color:#008841;" type="primary" form-type="submit" bindtap="register">确定注册</button>
       <button type="warn" form-type="submit" bindtap="back">取消注册</button>
     </view>
-  </view>
+  </view> 
 </view>
