@@ -1,0 +1,35 @@
+.container{
+    padding:15rpx;
+    font-size: 35rpx;
+    line-height: 30rpx;
+    background: white;
+}
+.row{
+    display: flex;
+    align-items: center;
+    margin: 10rpx;
+    padding-left: 10rpx;
+    width:100%;
+    border-bottom: 0.5px solid #ccc;
+}
+.row text{
+    flex-grow: 1;
+    text-align: left;
+    width:30%;
+}
+.row input{
+    font-size: 35rpx;
+    color: black;
+    flex-grow: 3;  
+    display: inline-block;
+    padding: 15rpx;
+    width:70%;
+}
+.bt button{
+    padding: 0 15rpx;
+    width:90%;
+    margin-top: 15rpx;
+}
+.bt{
+   margin-top: 35rpx;
+}

@@ -1,0 +1,47 @@
+<import src="/pages/template/usersComment/usersComment.wxml" />
+
+<view class="goods-detail">
+  <image src="{{postData.goodsImageUrl}}" class="goods-image" />
+
+  <view class="cont">
+    <view class="title">{{postData.goodsName}}</view>
+    <view class="gmxx">
+      <view class="font-buju">
+        <view class="jiage">¥：{{postData.goodsPrice}}</view>
+        <view class="font-kucun">库存：{{postData.goodsKucun}} </view>
+      </view>
+      <view class="xxbuju">
+        <view class="font_brand">快递：{{postData.goodsTransfee}}</view>
+        <view class="font_brand">月销{{postData.goodsSale}}笔</view>
+        <view class="font_brand">{{postData.goodsLocation}}</view>
+      </view>
+
+    </view>
+  </view>
+
+  <view class="buy-flag">
+    <view class="text-flag">
+      <image src="/images/open.png" class="buy-introduce" />
+      <view class="line-flag">产品简介</view>
+    </view>
+    <view class="introduce-text">{{postData.goodsIntroducetext}}</view>
+  </view>
+
+
+  <view class="userlist">
+    <view class="line-titles">
+      <view class="line-text1">用户评价</view>
+      <view class="line-text2" bindtap="seeMore">{{titleText}}>></view>
+    </view>
+    <view wx:for-items="{{postUserComment}}" wx:key="name" data-index="{{item.userId}}">
+      <template is="usersComment" data="{{item}}" />
+    </view>
+  </view>
+
+
+</view>
+
+<view class="decidebuy">
+  <view class="buy-button1" bindtap="addcart" style="background-color:{{bottoncolor1}}">加入购物车</view>
+  <view class="buy-button2" bindtap="addbuy" style="background-color:{{bottoncolor2}}">立即购买</view>
+</view>
