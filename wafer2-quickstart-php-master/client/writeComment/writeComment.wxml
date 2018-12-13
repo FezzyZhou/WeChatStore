@@ -1,0 +1,47 @@
+<view class="goodsList">
+
+  <view data-index="{{postData.goodsId}}" bindtap="SelectItem4">
+    <view class="goods-list">
+      <view class="goods-info-image">
+        <image src="{{postData.goodsImageUrl}}" class="goods-image" />
+      </view>
+
+      <view class="goods-info">
+        <view class="goods-info-name">{{item.goodsName}}</view>
+
+        <view class="goods-info-rating">
+          <view class="goods-info-rating-stars">评分：{{postData.goodsScore}}</view>
+          <view class="goods-info-rating-sales">月售{{postData.goodsSale}}单</view>
+        </view>
+
+        <view class="goods-info-price">仅售¥{{postData.goodsPrice}}</view>
+
+      </view>
+      <view class="goods-distribution">
+        <view class="goods-distribution-location">{{postData.goodsLocation}}</view>
+      </view>
+    </view>
+  </view>
+
+</view>
+
+<view class="line-titles">
+  <view class="line-text2">用户评分：</view>
+  <view class="section section_gap">
+    <view class="body-view">
+      <slider bindchange="sliderchange" value="{{score}}" max="10" step="0.5" show-value="true" />
+    </view>
+  </view>
+</view>
+
+<view class="line-titles">
+  <view class="line-text1">订单评价：</view>
+  <view class="order-inf">
+    <view class="section-text">
+      <textarea name="evaContent" maxlength="100" value="{{evaContent}}" class="weui-textarea" placeholder="填写内容(12-100字)" bindblur="charChange" />
+    </view>
+  </view>
+
+</view>
+
+<button style="background-color:#008841;" bindtap="addComment" type="primary" class="address-add">提交</button>
